@@ -1,0 +1,258 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  max-width: 23.4375rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#result,
+#summary {
+  padding: 1.25rem;
+  border-bottom-right-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+  text-align: center;
+}
+
+.result-inner,
+.summary-inner {
+  position: relative;
+  color: hsl(241, 100%, 89%);
+}
+
+#result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding-top: 0.625rem;
+}
+
+.result-inner h3 {
+  color: white;
+}
+
+.result-inner p {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.score {
+  width: 6.25rem;
+  height: 6.25rem;
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1) 0%,
+    hsla(241, 72%, 46%, 0) 100%
+  );
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.score h2 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 800;
+}
+
+.score p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+
+#summary {
+  flex: 0 0 48%;
+  background: hsl(0, 0%, 100%); /* White background */
+  border-top-right-radius: 1.875rem;
+  border-top-left-radius: 1.875rem;
+}
+
+.summary-inner {
+  text-align: left;
+  color: hsl(224, 30%, 27%); /* Dark gray blue */
+  font-weight: 800;
+}
+
+.score-reaction,
+.score-memory,
+.score-verbal,
+.score-visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.9375rem;
+  border-radius: 0.625rem;
+  padding: 0 0.9375rem 0;
+}
+
+.score-reaction img,
+.score-memory img,
+.score-verbal img,
+.score-visual img {
+  margin-right: 0.625rem;
+}
+
+.score-reaction p,
+.score-memory p,
+.score-verbal p,
+.score-visual p {
+  margin: 0;
+  color: hsl(224, 30%, 27%); /* Dark gray blue */
+  font-weight: 700;
+}
+
+.score-reaction h4 {
+  color: hsl(0, 100%, 67%); /* Light red */
+  margin-right: 9.375rem;
+}
+
+.score-memory h4 {
+  color: hsl(39, 100%, 56%); /* Orangey yellow */
+  margin-right: 9.375rem;
+}
+
+.score-verbal h4 {
+  color: hsl(166, 100%, 37%); /* Green teal */
+  margin-right: 10.1875rem;
+}
+
+.score-visual h4 {
+  color: hsl(234, 85%, 45%); /* Cobalt blue */
+  margin-right: 10.3125rem;
+}
+
+.score-reaction {
+  background-color: hsl(0, 100%, 98%); /* Light red */
+}
+
+.score-memory {
+  background-color: hsl(39, 100%, 98%); /* Orangey yellow */
+}
+
+.score-verbal {
+  background-color: hsl(166, 100%, 98%); /* Green teal */
+}
+
+.score-visual {
+  background-color: hsl(234, 85%, 98%); /* Cobalt blue */
+}
+
+span {
+  color: grey;
+}
+
+.continue {
+  display: block;
+  padding: 0.9375rem;
+  background-color: hsl(224, 30%, 27%); /* Dark gray blue */
+  color: white; /* Change text color as needed */
+  border-radius: 1.875rem;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 46.875rem) {
+  body {
+    background-color: hsl(221, 100%, 96%);
+    height: 100vh;
+    margin: 6.25rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #summary {
+    flex: 0 0 48%;
+    min-width: 21.25rem; /* Set max-width to match styling outside the media query */
+    box-sizing: border-box;
+    border-radius: 1.875rem;
+    max-height: 31rem;
+  }
+
+  #result {
+    border-radius: 1.875rem;
+    min-width: 18.75rem;
+    max-height: 31rem;
+  }
+
+  .continue:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+  }
+
+  .score {
+    width: 11.25rem;
+    height: 11.25rem;
+  }
+
+  .score h2 {
+    font-size: 4.8125rem;
+  }
+
+  .score p {
+    font-size: 1.125rem;
+  }
+
+  .result-inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .result-inner h4 {
+    font-size: 1.5rem;
+    margin-bottom: 3.125rem;
+  }
+  .result-inner h3 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .summary-inner h4 {
+    font-size: 1.5rem;
+  }
+
+  .score-reaction h4,
+  .score-memory h4,
+  .score-verbal h4,
+  .score-visual h4 {
+    font-size: 0.9375rem;
+  }
+
+  .score-reaction h4 {
+    margin-right: 7.5rem;
+  }
+
+  .score-memory h4 {
+    margin-right: 7.5rem;
+  }
+
+  .score-verbal h4 {
+    margin-right: 8.3125rem;
+  }
+
+  .score-visual h4 {
+    margin-right: 8.4375rem;
+  }
+
+  .attribution {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+  }
+}
